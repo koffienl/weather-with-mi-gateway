@@ -306,7 +306,7 @@ class BDSpeech extends eventEmitter {
 
     return this.initToken()
     .then(() => {
-      this.processQueue();
+      return this.processQueue();
     })
 
   }
@@ -332,8 +332,8 @@ class BDSpeech extends eventEmitter {
     if(this.isPlaying) return 0;
     const command = this.queues.shift();
     if(!!command){
-      this._speak(command);
-      this.isPlaying = true;
+      this.isPlaying = true;      
+      return this._speak(command);
     }
   }
 

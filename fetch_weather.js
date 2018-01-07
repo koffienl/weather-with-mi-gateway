@@ -72,7 +72,6 @@ function Weather (token, longitude = '116.443108', latitude = '39.92147') {
     this.longitude = longitude;
     this.latitude = latitude;
     this.host = util.format('https://api.caiyunapp.com/v2/%s/%s,%s/', token, longitude, latitude);
-    console.log(this.host);
 }
 
 Weather.prototype.fetch = function () {

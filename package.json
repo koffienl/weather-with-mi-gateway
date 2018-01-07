@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "fluent-ffmpeg": "^2.1.2",
     "little-fetch": "^1.0.4",
     "request": "^2.83.0"
   }

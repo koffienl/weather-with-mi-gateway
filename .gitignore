@@ -1,3 +1,7 @@
+# Project ignore
+tmp/
+session.json
+config.json
 # Logs
 logs
 *.log
